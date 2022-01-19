@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout10"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Checkout.CheckoutPayment" >
+
+    <EditText
+        android:id="@+id/loginemail4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/round_border"
+        android:drawableStart="@drawable/round_border"
+        android:drawablePadding="10dp"
+        android:ems="20"
+        android:hint="Enter Holder Name"
+        android:inputType="textPersonName"
+        android:outlineProvider="none"
+        android:padding="15dp"
+        android:textColorHint="#686565"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <EditText
+        android:id="@+id/loginemail5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/round_border"
+        android:drawableStart="@drawable/round_border"
+        android:drawablePadding="10dp"
+        android:ems="20"
+        android:hint="Enter Account Number"
+        android:inputType="textPersonName"
+        android:outlineProvider="none"
+        android:padding="15dp"
+        android:textColorHint="#686565"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginemail4" />
+
+    <EditText
+        android:id="@+id/loginemail6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/round_border"
+        android:drawableStart="@drawable/round_border"
+        android:drawablePadding="10dp"
+        android:ems="20"
+        android:hint="Enter CVV Number"
+        android:inputType="textPersonName"
+        android:outlineProvider="none"
+        android:padding="15dp"
+        android:textColorHint="#686565"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginemail5" />
+
+    <EditText
+        android:id="@+id/loginemail7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/round_border"
+        android:drawableStart="@drawable/round_border"
+        android:drawablePadding="10dp"
+        android:editable="false"
+        android:ems="20"
+        android:hint="Enter Amount"
+        android:inputType="text"
+        android:outlineProvider="none"
+        android:padding="15dp"
+        android:textColorHint="#686565"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginemail6" />
+
+    <Button
+        android:id="@+id/registerbutton3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/round_bg"
+        android:cursorVisible="true"
+        android:outlineProvider="none"
+        android:text="Next"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginemail7" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Payment Details"
+        android:textColor="#FF0000"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkout" />
+
+    <ProgressBar
+        android:id="@+id/progressBaradd2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:scaleY="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/checkout"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/roundborder1"
+        android:text="2"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/checkout4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/roundborder1"
+        android:text="1"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/checkout5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/roundborder1"
+        android:text="3"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

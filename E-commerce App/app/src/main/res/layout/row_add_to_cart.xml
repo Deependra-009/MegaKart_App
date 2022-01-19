@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardElevation="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:paddingBottom="10dp">
+
+
+        <TextView
+            android:id="@+id/atcname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Product Name"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/atcimage"
+            android:layout_width="252dp"
+            android:layout_height="225dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/atcname"
+            app:srcCompat="@drawable/asus" />
+
+        <TextView
+            android:id="@+id/atcprice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="50dp"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Price"
+            android:textColor="#FF0404"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/atcimage" />
+
+        <TextView
+            android:id="@+id/atcquantity"
+            android:layout_width="85dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="88dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/squareborder"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:text="1"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/atcprice" />
+
+        <ImageView
+            android:id="@+id/atcdecreasebtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/roundborder"
+            android:padding="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/atcquantity"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/atcprice"
+            app:srcCompat="@drawable/minus" />
+
+        <ImageView
+            android:id="@+id/atcincreasebtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/roundborder"
+            android:padding="8dp"
+            app:layout_constraintStart_toEndOf="@+id/atcquantity"
+            app:layout_constraintTop_toBottomOf="@+id/atcprice"
+            app:srcCompat="@drawable/plus" />
+
+        <ImageView
+            android:id="@+id/atcdeletebtn"
+            android:layout_width="35dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/atcprice"
+            app:srcCompat="@drawable/ic_baseline_delete_24" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

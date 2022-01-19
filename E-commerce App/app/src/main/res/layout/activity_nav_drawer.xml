@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:context=".NavDrawer">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layout1">
+
+        <include layout="@layout/main_toolbar" />
+
+        <!--        <androidx.viewpager.widget.ViewPager-->
+        <!--            android:id="@+id/pager"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent">-->
+
+        <!--        </androidx.viewpager.widget.ViewPager>-->
+        <FrameLayout
+            android:id="@+id/placeholder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:layout_gravity="start">
+
+        <include layout="@layout/main_nav_drawer" />
+    </RelativeLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

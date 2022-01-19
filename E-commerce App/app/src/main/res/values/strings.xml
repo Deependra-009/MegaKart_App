@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">MegaKart</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="loginheading">Hello,Welcome back to our account</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_home_page">HomePage</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="toast_message" />
+
+
+    <!--     All Categories -->
+    <!--     Images Files -->
+    <array name="allcategoriesimages">
+        <item>@drawable/mobiles</item>
+        <item>@drawable/electronics</item>
+        <item>@drawable/home</item>
+        <item>@drawable/fashion</item>
+        <item>@drawable/appliances</item>
+        <item>@drawable/grocery</item>
+    </array>
+
+    <!--     Names -->
+    <string-array name="allcategoriesname">
+        <item>Mobiles</item>
+        <item>Electronics</item>
+        <item>Home</item>
+        <item>Fashion</item>
+        <item>Appliances</item>
+        <item>Grocery</item>
+    </string-array>
+
+    <string-array name="allcategoriesdisc">
+        <item>Up to 15% off</item>
+        <item>Up to 75% off</item>
+        <item>Up to 30% off</item>
+        <item>Up to 80% off</item>
+        <item>Up to 75% off</item>
+        <item>Up to 25% off</item>
+
+    </string-array>
+
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.app.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_navDrawer"
+            app:destination="@id/navDrawer" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.app.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/navDrawer"
+        android:name="com.example.app.NavDrawer"
+        android:label="activity_nav_drawer"
+        tools:layout="@layout/activity_nav_drawer"/>
+    <fragment
+        android:id="@+id/mobiles"
+        android:name="com.example.app.Navdrawer.Mobiles"
+        android:label="fragment_mobiles"
+        tools:layout="@layout/fragment_mobiles" >
+        <action
+            android:id="@+id/action_mobiles_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.app.Checkout.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" >
+        <argument
+            android:name="productdata"
+            app:argType="com.example.app.Model.AdapterData" />
+    </fragment>
+</navigation>
