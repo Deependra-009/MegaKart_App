@@ -7,6 +7,8 @@
 
 * IDE :- Android Studio
 * OS  :- Ubuntu ( Linux )
+
+* Video Link:- <a href="https://mega.nz/file/Ra4D2Q7L#xGWSf4UaTBbjVDn_AoTYAOxqB1SAnA1IhKsl9rXjYt4">Click Here</a>
   
   
 ## HOW TO DOWNLOAD THIS PROJECT
