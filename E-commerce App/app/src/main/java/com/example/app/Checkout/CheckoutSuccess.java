@@ -41,19 +41,17 @@ public class CheckoutSuccess extends Fragment {
 
 //        ----------->  Automatic move to Home Page after 2 Sec <--------------
 
-        Handler handler = new Handler();
+       Handler handler = new Handler();
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
-                Home home=new Home();
+                AllCategories ac=new AllCategories();
                 FragmentTransaction fm=getFragmentManager().beginTransaction();
-                fm.replace(R.id.placeholder,home);
+                fm.replace(R.id.placeholder,ac);
                 fm.addToBackStack(null);
                 fm.commit();
             }
         };
-
-        handler.postDelayed(runnable, 2000);
 
 
 
